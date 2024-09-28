@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Futebol</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Cartão 1 -->
+        <div class="card" id="card1">
+            <div class="card-face card-front">
+                <p>Qual país ganhou a Copa do Mundo de 2018?</p>
+            </div>
+            <div class="card-face card-back">
+                <p>A França venceu a Copa do Mundo de 2018.</p>
+            </div>
+        </div>
+
+        <!-- Cartão 2 -->
+        <div class="card" id="card2">
+            <div class="card-face card-front">
+                <p>Qual jogador marcou mais gols em Copas do Mundo?</p>
+            </div>
+            <div class="card-face card-back">
+                <p>Miroslav Klose, com 16 gols.</p>
+            </div>
+        </div>
+
+        <!-- Cartão 3 -->
+        <div class="card" id="card3">
+            <div class="card-face card-front">
+                <p>Em que ano foi realizada a primeira Copa do Mundo?</p>
+            </div>
+            <div class="card-face card-back">
+                <p>A primeira Copa do Mundo foi em 1930, no Uruguai.</p>
+            </div>
+        </div>
+
+        <!-- Cartão 4 -->
+        <div class="card" id="card4">
+            <div class="card-face card-front">
+                <p>Qual clube brasileiro tem mais títulos da Libertadores?</p>
+            </div>
+            <div class="card-face card-back">
+                <p>O clube com mais títulos da Libertadores é o São Paulo, com 3 conquistas.</p>
+            </div>
+        </div>
+
+        <!-- Cartão 5 -->
+        <div class="card" id="card5">
+            <div class="card-face card-front">
+                <p>Qual jogador brasileiro é conhecido como "O Rei do Futebol"?</p>
+            </div>
+            <div class="card-face card-back">
+                <p>Pelé é conhecido como o Rei do Futebol.</p>
+            </div>
+        </div>
+    </div>
+
+     <!-- Cartão 6 -->
+     <div class="card" id="card5">
+        <div class="card-face card-front">
+            <p>Qual o time que mais ganhou a Champions League ?</p>
+        </div>
+        <div class="card-face card-back">
+            <p>É o Real Madrid, com 14 títulos.</p>
+        </div>
+    </div>
+</div>
+
+    <script>
+        const cards = document.querySelectorAll('.card');
+
+        cards.forEach(card => {
+            card.addEventListener('click', function() {
+                card.classList.toggle('is-flipped');
+            });
+        });
+    </script>
+</body>
+</html>
